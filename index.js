@@ -1,4 +1,4 @@
-require('./settings')
+require('./config')
 const { default: PeaceMDmousConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const config = require('./config')
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
