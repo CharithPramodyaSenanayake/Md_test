@@ -82,7 +82,7 @@ async function startPeaceMD() {
         if (!PeaceMD.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(PeaceMD, mek, store)
-        require("./plugin")(PeaceMD, m, chatUpdate, store)
+        require("./peaceMD")(PeaceMD, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
